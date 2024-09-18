@@ -1,0 +1,25 @@
+meta {
+  name: create user
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:7855/api/user
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Иван",
+    "email": "ivan@mail.ru",
+    "phone": "+79640931309",
+    "country": "Russia",
+    "enterFrom": "Farab border",
+    "exitFrom": "Farab border",
+    "purpose": "Travel",
+    "visitedBefore": false,
+    "visitTime": "12.32.1202"
+  }
+}

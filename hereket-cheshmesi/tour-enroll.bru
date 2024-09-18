@@ -1,0 +1,19 @@
+meta {
+  name: tour-enroll
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base}}/tour-enroll
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Begench",
+    "email": "begenchgeldyev@gmail.com",
+    "tour_id": 4231
+  }
+}
